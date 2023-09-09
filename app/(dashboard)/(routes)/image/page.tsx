@@ -171,7 +171,7 @@ const ImagePage = () => {
                                         <Image
                                             alt="image
                                             "
-                                            fill 
+                                            fill
                                             src={src}
                                         />
                                     </div>
