@@ -39,10 +39,10 @@ const VideoPage = () => {
 
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         try {
-            setVideo(undefined)
+            setVideo(undefined);
             const response = await axios.post('/api/video', values);
-            console.log(response.data.audio)
             setVideo(response.data[0]);
+            form.reset();
         form.reset();
         } catch (error: any) {
             console.log(error)
@@ -93,7 +93,7 @@ const VideoPage = () => {
                             </div>
                         )}
                         {!video && !isLoading && (
-                            <Empty label="No music generated" />
+                            <Empty label="No video generated" />
                         )}
                         {video && (
                             <video controls className="w-full aspect-video mt-8 rounded-lg border bg-black">

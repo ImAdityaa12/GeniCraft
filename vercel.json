@@ -5,7 +5,7 @@
         "maxDuration": 200
       },
       "app/api/video/route.ts": {
-        "memory": 8000,
+        "memory": 3008,
         "maxDuration": 200
       }
     }
